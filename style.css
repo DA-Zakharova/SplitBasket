@@ -1,0 +1,118 @@
+body {
+    background-image: url("grocery.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    background-color:rgba(223, 241, 223, 0.7);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 700px;
+    margin-left: 30px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: #708A58 solid 2px;
+}
+
+h1 {
+    font-family: "Savate", sans-serif;
+    font-size: 35px;
+    align-self: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    font-family: "Savate", sans-serif;
+    font-size: 20px;
+}
+
+#discount {
+    display: none;
+    font-family: "Savate", sans-serif;
+    width: 450px;
+}
+
+input {
+    padding: 10px;
+    font-family: "Savate", sans-serif;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+}
+
+.blocks {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.money {
+    font-family: "Savate", sans-serif;
+    font-size: 20px;
+    background-color: #708A58;
+    padding: 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+#apply, #calculate {
+    font-family: "Savate", sans-serif;
+    font-size: 20px;
+    width: 450px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+#apply {
+    background-color: #FADA7A;
+}
+
+#calculate {
+    margin-top: 10px;
+    background-color: #FB9E3A;
+}
+
+
+
+@media all and (max-width: 500px) {
+    body {
+        background-image: url("groceryMob.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-color: #FAEDCA;
+    }
+
+    .container {
+        background-color:rgba(223, 241, 223, 0.9);
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        width: 330px;
+        height: 1000px;
+    }
+    
+
+    #apply, #calculate, input, #discount {
+        width: 300px;
+    }
+
+    .blocks {
+        display: flex;
+        flex-direction: column;  
+        width: 300px;
+    }
+
+    .money {
+        padding: 10px;
+    }
+}
