@@ -44,3 +44,11 @@ function calcMoney(e) {
     document.querySelector("#totalPerPerson").textContent = totalPerPerson;
 }
 
+
+gsap.from(".container", {
+    opacity: 0,              
+    duration: 3,
+    ease: "power0.none",
+    delay: 0.8,
+})
+
