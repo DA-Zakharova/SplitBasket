@@ -21,6 +21,7 @@ function calcMoney(e) {
         title: "Error!",
         text: "Please enter your information!",
         });
+        return;
     }
 
     else if (isNaN(bill) || isNaN(people)) {
@@ -29,6 +30,7 @@ function calcMoney(e) {
         title: "Ой!",
         text: "Нужно ввести число.",
         });
+        return;
     }
 
     let billPerPerson = bill / people;
